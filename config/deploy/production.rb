@@ -13,3 +13,11 @@ server 'jooj.cloudapp.net', user: 'jooj', roles: %w{web app db}, primary: true
 set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:full_app_name)}"
 # set to production for Rails
 set :rails_env, :production
+
+# number of unicorn workers, this will be reflected in
+# the unicorn.rb and the monit configs
+set :unicorn_worker_count, 5
+
+# whether we're using ssl or not, used for building nginx
+# config file
+set :enable_ssl, false

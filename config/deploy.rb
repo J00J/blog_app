@@ -2,6 +2,7 @@
 lock '3.3.5'
 
 set :application, 'blog_app'
+set :deploy_user, 'jooj'
 set :repo_url, 'https://github.com/J00J/blog_app'
 
 # describe the rbenv environment we are deploying into
