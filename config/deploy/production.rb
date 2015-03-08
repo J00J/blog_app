@@ -8,7 +8,7 @@ set :deploy_user, "jooj"
 # the 'full name' of the application
 set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 # the server(s) to deploy to
-server 'j00j.cloudapp.net', user: 'jooj', roles: %w{web app db}, primary: true
+server '23.97.133.163', user: 'jooj', roles: %w{web app db}, primary: true
 # the path to deploy to
 set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:full_app_name)}"
 # set to production for Rails
