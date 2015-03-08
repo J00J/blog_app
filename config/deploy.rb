@@ -1,4 +1,4 @@
-lock '3.1.0'
+lock '3.3.5'
 # application name and the github repository
 set :application, 'jooj'
 set :rails_env, "production"
